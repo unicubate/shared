@@ -1,4 +1,4 @@
-import { PricingType } from "../enum";
+import { PricingType } from "./enum";
 
 export type Pricing = {
   name: string;
