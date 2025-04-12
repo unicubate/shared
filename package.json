@@ -1,0 +1,20 @@
+{
+  "name": "unicubate-shared",
+  "version": "0.1.0",
+  "license": "ISC",
+  "description": "Shared between backend and frontend repos",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unicubate/shared.git"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "docs": "node ./scripts/docs.js",
+    "docs:notion": "node ./scripts/docs.js --notion",
+    "test": "bun ./src/lib/codice-fiscale/test.ts",
+    "build": "rm -rf ./dist && tsc && node ./scripts/package.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
